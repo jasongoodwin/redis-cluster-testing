@@ -9,4 +9,9 @@
 `telnet localhost 9101`...
 - now open 9 terminal sessions and start redis from each of the folders inside cluster: `../../src/redis-server ./redis.conf'
 
-# Configuring the Cluster
+# starting/stopping
+- You can start all clster nodes by executing `./start.sh` from inside the cluster folder.
+- You can stop all cluster nodes by executing `./stop.sh` from instide the cluster folder (works on osx at least, and shouldn't kill any other redis-server instances)
+
+# configuring the cluster after starting
+)
