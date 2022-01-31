@@ -28,5 +28,7 @@ $ ps -ef|grep redis-
   501 79082 79080   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9303 [cluster]
 ```
 
+Note that each folder will have a log file if you need to check the output from the redis instance.
+
 # configuring the cluster after starting
-)
+The nodes that are running don't yet know about each other.
