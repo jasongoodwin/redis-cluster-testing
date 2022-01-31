@@ -13,5 +13,20 @@
 - You can start all clster nodes by executing `./start.sh` from inside the cluster folder.
 - You can stop all cluster nodes by executing `./stop.sh` from instide the cluster folder (works on osx at least, and shouldn't kill any other redis-server instances)
 
+
+Validate all of the nodes are running with ps:
+```
+$ ps -ef|grep redis-
+  501 79069 79065   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9101 [cluster]
+  501 79070 79066   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9102 [cluster]
+  501 79072 79067   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9103 [cluster]
+  501 79074 79068   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9201 [cluster]
+  501 79075 79071   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9202 [cluster]
+  501 79077 79073   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9203 [cluster]
+  501 79079 79076   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9301 [cluster]
+  501 79081 79078   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9302 [cluster]
+  501 79082 79080   0  2:51pm ttys013    0:00.02 ../../src/redis-server *:9303 [cluster]
+```
+
 # configuring the cluster after starting
 )
