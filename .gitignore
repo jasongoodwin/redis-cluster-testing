@@ -1,4 +1,3 @@
-nodes.conf
 src
 .*.swp
 *.o
@@ -19,7 +18,6 @@ release
 misc/*
 src/release.h
 appendonly.aof.*
-appendonlydir
 SHORT_TERM_TODO
 release.h
 src/transfer.sh
