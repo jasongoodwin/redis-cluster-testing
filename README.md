@@ -1,5 +1,10 @@
 # redis-cluster-testing
 
+## Cleaning/resetting the repo
+After building redis and shutting down the services, you can execute:
+`git clean -f` 
+to remove all of the logs, nodedata, redis journal data etc to completely reset everything
+
 ## Setup/starting the servers:
 - clone this repo
 - wget and untar redis (https://redis.io/download) in this folder directly
